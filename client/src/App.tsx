@@ -9,7 +9,9 @@ import AuthPage from "@/pages/auth-page";
 import HotelPage from "@/pages/hotel-page";
 import { ProtectedRoute } from "./lib/protected-route";
 import NavBar from "./components/layout/nav-bar";
-
+// client/src/App.tsx
+import { helperFunction } from "@afristayz/shared";
+console.log(helperFunction());
 function Router() {
   return (
     <>
