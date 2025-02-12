@@ -2,6 +2,9 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 import { users, hotels, bookings } from "@shared/schema"; // Adjust this according to your layout
+// server/index.ts
+import { helperFunction } from "@afristayz/shared";
+console.log(helperFunction());
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
