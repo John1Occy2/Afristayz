@@ -10,7 +10,10 @@ export const users = pgTable("users", {
   isHotelOwner: boolean("is_hotel_owner").default(false),
   createdAt: timestamp("created_at").defaultNow(),
 });
-
+// shared/src/index.ts
+export const helperFunction = () => {
+  return "Hello from shared!";
+};
 export const hotels = pgTable("hotels", {
   id: serial("id").primaryKey(),
   name: text("name").notNull(),
